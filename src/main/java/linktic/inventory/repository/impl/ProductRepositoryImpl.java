@@ -21,8 +21,8 @@ public class ProductRepositoryImpl implements IProductRepository {
             return productClient.findProductById(productId);
         } catch (Exception e) {
             log.error("Error connecting to Product: {}", e.getMessage());
-            throw new BusinessException(CodesAndDescriptionResponses.PRODUCT_NOT_AVAILABLE.getDescription(),
-                    CodesAndDescriptionResponses.PRODUCT_NOT_AVAILABLE.getCode());
+            throw new BusinessException(CodesAndDescriptionResponses.ERROR_PRODUCT_NOT_FOUND.getDescription(),
+                    CodesAndDescriptionResponses.ERROR_PRODUCT_NOT_FOUND.getCode());
         }
     }
 }
