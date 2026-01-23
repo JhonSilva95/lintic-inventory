@@ -1,4 +1,4 @@
-package linktic.inventory.repository;
+package linktic.inventory.repositories;
 
 import linktic.inventory.dtos.ResponseDto;
 

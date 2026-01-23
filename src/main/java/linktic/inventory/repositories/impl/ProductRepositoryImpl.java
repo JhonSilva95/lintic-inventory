@@ -1,9 +1,9 @@
-package linktic.inventory.repository.impl;
+package linktic.inventory.repositories.impl;
 
 import linktic.inventory.client.ProductClient;
 import linktic.inventory.dtos.ResponseDto;
-import linktic.inventory.exeptions.BusinessException;
-import linktic.inventory.repository.IProductRepository;
+import linktic.inventory.exceptions.BusinessException;
+import linktic.inventory.repositories.IProductRepository;
 import linktic.inventory.utils.CodesAndDescriptionResponses;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

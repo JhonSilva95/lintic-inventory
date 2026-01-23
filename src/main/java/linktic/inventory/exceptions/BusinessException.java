@@ -1,4 +1,4 @@
-package linktic.inventory.exeptions;
+package linktic.inventory.exceptions;
 
 import lombok.Getter;
 

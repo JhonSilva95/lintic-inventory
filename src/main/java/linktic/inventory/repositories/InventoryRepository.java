@@ -1,6 +1,6 @@
-package linktic.inventory.repository;
+package linktic.inventory.repositories;
 
-import linktic.inventory.entity.InventoryEntity;
+import linktic.inventory.entities.InventoryEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

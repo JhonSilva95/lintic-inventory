@@ -1,4 +1,4 @@
-package linktic.inventory.service;
+package linktic.inventory.services;
 
 import linktic.inventory.dtos.PurchaseRequestDto;
 import linktic.inventory.dtos.ResponseDto;

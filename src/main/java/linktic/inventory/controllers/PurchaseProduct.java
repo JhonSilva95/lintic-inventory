@@ -1,8 +1,8 @@
-package linktic.inventory.controller;
+package linktic.inventory.controllers;
 
 import linktic.inventory.dtos.PurchaseRequestDto;
 import linktic.inventory.dtos.ResponseDto;
-import linktic.inventory.service.IPurchaseProductService;
+import linktic.inventory.services.IPurchaseProductService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;

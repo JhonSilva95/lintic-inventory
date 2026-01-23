@@ -1,14 +1,14 @@
-package linktic.inventory.service.impl;
+package linktic.inventory.services.impl;
 
 import jakarta.transaction.Transactional;
 import linktic.inventory.dtos.PurchaseRequestDto;
 import linktic.inventory.dtos.ResponseDto;
-import linktic.inventory.entity.InventoryEntity;
-import linktic.inventory.entity.PurchaseHistoryEntity;
-import linktic.inventory.exeptions.BusinessException;
-import linktic.inventory.repository.InventoryRepository;
-import linktic.inventory.repository.PurchaseHistoryRepository;
-import linktic.inventory.service.IPurchaseProductService;
+import linktic.inventory.entities.InventoryEntity;
+import linktic.inventory.entities.PurchaseHistoryEntity;
+import linktic.inventory.exceptions.BusinessException;
+import linktic.inventory.repositories.InventoryRepository;
+import linktic.inventory.repositories.PurchaseHistoryRepository;
+import linktic.inventory.services.IPurchaseProductService;
 import linktic.inventory.utils.CodesAndDescriptionResponses;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

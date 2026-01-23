@@ -1,4 +1,4 @@
-package linktic.inventory.exeptions;
+package linktic.inventory.exceptions;
 
 import linktic.inventory.dtos.ResponseDto;
 import linktic.inventory.utils.CodesAndDescriptionResponses;

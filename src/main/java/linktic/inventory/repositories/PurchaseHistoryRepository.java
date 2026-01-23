@@ -1,6 +1,6 @@
-package linktic.inventory.repository;
+package linktic.inventory.repositories;
 
-import linktic.inventory.entity.PurchaseHistoryEntity;
+import linktic.inventory.entities.PurchaseHistoryEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

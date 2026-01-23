@@ -1,7 +1,7 @@
 package linktic.inventory.client;
 
 import linktic.inventory.dtos.ResponseDto;
-import linktic.inventory.exeptions.BusinessException;
+import linktic.inventory.exceptions.BusinessException;
 import linktic.inventory.utils.CodesAndDescriptionResponses;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
