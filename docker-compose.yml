@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  product-service:
+    build: .
+    container_name: inventory-app
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db-postgres:5432/product_db
+      - SPRING_DATASOURCE_USERNAME=user_prod
+      - SPRING_DATASOURCE_PASSWORD=pass_prod
+      - JAVA_OPTS=-Xms256m -Xmx512m
+    depends_on:
+      - db-postgres
+
+  db-postgres:
+    image: postgres:15-alpine
+    container_name: db-postgres
+    ports:
+      - "5434:5432"
+    environment:
+      - POSTGRES_DB=product_db
+      - POSTGRES_USER=user_prod
+      - POSTGRES_PASSWORD=pass_prod
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
